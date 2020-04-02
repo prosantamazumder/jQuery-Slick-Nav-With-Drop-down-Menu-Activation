@@ -1,0 +1,69 @@
+
+	/*Medium Layout: 768px.....*/
+@media only screen and (min-width: 1200px) and (max-width:1600px) {
+
+.slicknav_menu {
+  display: none;
+}
+
+
+
+
+
+}
+	/*Medium Layout: 768px......*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	body{background:red;}
+.slicknav_menu {
+  display: none;
+}
+	.MAIN_MENU ul li a {
+  padding: 15px 59px 10px 15px;
+
+}
+	
+	
+
+}
+
+	/*Tablet Layout: 768px.....*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	body{background:blue;}
+	.slicknav_menu {
+  display: none;
+}
+	.MAIN_MENU ul li a {
+  padding: 10px 26px 10px 16px;
+
+}
+.MAIN_MENU ul li ul li {
+  width: 138px;
+}
+}
+
+
+
+
+	/*Mobile Layout:320px.....*/
+@media only screen and (max-width: 767px) {
+	body{background:green;}
+.MAIN_MENU {
+  visibility: hidden;
+}
+.slicknav_btn {
+  float: left;
+}
+}
+
+
+	/*Wide Mobile Layout: 480px....*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body{background:pink;}
+.MAIN_MENU {
+  visibility: hidden;
+}
+.slicknav_btn {
+  float: right;
+}
+}
+
