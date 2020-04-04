@@ -10,104 +10,175 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/slicknav.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/slicknav.css">
+	<link rel="stylesheet" href="style.css">
+
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+		<!-- PRELOADER -->
+	    <div class="loader-popover" id="loader">
+	        <div class="loader">
+	            <div class="loader-container">
+	                <div class="box1"></div>
+	                <div class="box2"></div>
+	                <div class="box3"></div>
+	                <div class="box4"></div>
+	            </div>
+	        </div>
+	    </div>
+	    <!-- PLRELOADER END -->
         <!-- Add your site or application content here -->
+
+    <!-- START OF MAIN BODY WRAPPER -->
+    <div class="wrapper">
         <!--MAIN_MENU-->
-		<div class="MAIN_MENU">
-			<ul id="nav">
-				<li class="manu1"><a href="#">প্রথম পাতা</a></li>
-				<li class="manu2"><a href="#">বিদ্যালয় সম্পর্কে</a>
-					<!--DROVDOWN|_MENU-->
-					<ul class="abc-menu">
-						<li><a href="#">প্রধান শিক্ষকের কথা</a></li>
-						<li><a href="#">বিদ‍্যালয়ের ইতিহাস</a></li>
-						<li><a href="#">অবকাঠামো</a></li>
-						<li><a href="#">দাতাদের তালিকা</a></li>
-						<li><a href="#">সুবিধাসমূহ</a></li>
-					</ul>
-				</li>
-				<li class="manu3"><a href="#">শিক্ষক</a>
-					<ul>
-						<li><a href="#">বর্তমান শিক্ষকদের তালিকা</a></li>
-						<li><a href="#">শুন‍্যপদের তালিকা</a></li>
-						<li><a href="#">প্রাক্তন শিক্ষকদের তালিকা</a></li>
-						<li><a href="#">প৩য় ও ৪র্থশ্রেণীর কর্মচারীদের তালিকা</a></li>
-					</ul>
-					<!--END DROVDOWN|_MENU-->
-				</li>
-				<li class="manu4"><a href="#">শিক্ষার্থী</a>
-					<ul>
-						<li><a href="#">শিক্ষার্থীদের তালিকা</a>
-							<ul>
-								<li><a href="#">শিক্ষার্থীদের তালিকা</a></li>
-								<li><a href="#">নোটিশবোর্ড</a></li>
-								<li><a href="#">ক্লাশ রুটিন</a></li>
-								<li><a href="#">পরীক্ষার রুটিন</a></li>
-								<li><a href="#">পরীক্ষার ফলাফল</a></li>
-								<li><a href="#">একাডেমিক ক‍্যালেন্ডার</a></li>
-								<li><a href="#">কৃতি শিক্ষার্থীদের তালিকা</a></li>
+		<div class="menu-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="MAIN_MENU">
+							<ul id="nav">
+								<li class="manu1"><a href="#">প্রথম পাতা</a></li>
+								<li class="manu2"><a href="#">বিদ্যালয় সম্পর্কে</a>
+									<!--DROVDOWN|_MENU-->
+									<ul class="abc-menu">
+										<li><a href="#">প্রধান শিক্ষকের কথা</a></li>
+										<li><a href="#">বিদ‍্যালয়ের ইতিহাস</a></li>
+										<li><a href="#">অবকাঠামো</a></li>
+										<li><a href="#">দাতাদের তালিকা</a></li>
+										<li><a href="#">সুবিধাসমূহ</a></li>
+									</ul>
+								</li>
+								<li class="manu3"><a href="#">শিক্ষক</a>
+									<ul>
+										<li><a href="#">বর্তমান শিক্ষকদের তালিকা</a></li>
+										<li><a href="#">শুন‍্যপদের তালিকা</a></li>
+										<li><a href="#">প্রাক্তন শিক্ষকদের তালিকা</a></li>
+										<li><a href="#">প৩য় ও ৪র্থশ্রেণীর কর্মচারীদের তালিকা</a></li>
+									</ul>
+									<!--END DROVDOWN|_MENU-->
+								</li>
+								<li class="manu4"><a href="#">শিক্ষার্থী</a>
+									<ul>
+										<li><a href="#">শিক্ষার্থীদের তালিকা</a>
+											<ul>
+												<li><a href="#">শিক্ষার্থীদের তালিকা</a></li>
+												<li><a href="#">নোটিশবোর্ড</a></li>
+												<li><a href="#">ক্লাশ রুটিন</a></li>
+												<li><a href="#">পরীক্ষার রুটিন</a></li>
+												<li><a href="#">পরীক্ষার ফলাফল</a></li>
+												<li><a href="#">একাডেমিক ক‍্যালেন্ডার</a></li>
+												<li><a href="#">কৃতি শিক্ষার্থীদের তালিকা</a></li>
+											</ul>
+										</li>
+										<li><a href="#">নোটিশবোর্ড</a></li>
+										<li><a href="#">ক্লাশ রুটিন</a></li>
+										<li><a href="#">পরীক্ষার রুটিন</a></li>
+										<li><a href="#">পরীক্ষার ফলাফল</a></li>
+										<li><a href="#">একাডেমিক ক‍্যালেন্ডার</a></li>
+										<li><a href="#">কৃতি শিক্ষার্থীদের তালিকা</a></li>
+									</ul>
+								</li>
+								<li class="manu5"><a href="">অভিবাবক</a>
+									<ul>
+										<li><a href="#">অভিভাবক প‍্যানেল</a></li>
+										<li><a href="#">ভর্তি তথ‍্য</a></li>
+										<li><a href="#">অভিযোগ</a></li>
+									</ul>
+								</li>
+								<li class="manu6"><a href="">গ্যালারী</a>
+									<ul>
+										<li><a href="#">গ্যালারী</a></li>
+										<li><a href="#">ফটো	গ্যালারী</a></li>
+									</ul>
+								</li>
+								<li class="manu7"><a href="">যোগাযোগ</a></li>
 							</ul>
-						</li>
-						<li><a href="#">নোটিশবোর্ড</a></li>
-						<li><a href="#">ক্লাশ রুটিন</a></li>
-						<li><a href="#">পরীক্ষার রুটিন</a></li>
-						<li><a href="#">পরীক্ষার ফলাফল</a></li>
-						<li><a href="#">একাডেমিক ক‍্যালেন্ডার</a></li>
-						<li><a href="#">কৃতি শিক্ষার্থীদের তালিকা</a></li>
-					</ul>
-				</li>
-				<li class="manu5"><a href="">অভিবাবক</a>
-					<ul>
-						<li><a href="#">অভিভাবক প‍্যানেল</a></li>
-						<li><a href="#">ভর্তি তথ‍্য</a></li>
-						<li><a href="#">অভিযোগ</a></li>
-					</ul>
-				</li>
-				<li class="manu6"><a href="">গ্যালারী</a>
-					<ul>
-						<li><a href="#">গ্যালারী</a></li>
-						<li><a href="#">ফটো	গ্যালারী</a></li>
-					</ul>
-				</li>
-				<li class="manu7"><a href="">যোগাযোগ</a></li>
-			</ul>
-			<!--END MAIN_MENU-->
+							<!--END MAIN_MENU-->
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		
-		
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+		<div class="social-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-inline social social-intro">
+                            <span class="profile">
+                                <a href="https://www.facebook.com/PMPROSANTA0" target="_blank">
+                                    <img src="social/Prosanta-Mazumder.jpeg" alt="Prosanta Mazumder" title="Prosanta Mazumder">
+                                </a>
+                            </span>
+                            <h2>CEO & Founder at PressTech IT Institute.</h2>
+                            <h5>follow me social media</h5>
+                            <li>
+                                <a href="https://www.facebook.com/PMPROSANTA0" target="_blank">
+                                    <img src="social/facebook.png" alt="facebook" title="facebook">
+                                </a>
+                            </li>
+                                <li>
+                                <a href="https://twitter.com/prosantomazumd1" target="_blank">
+                                    <img src="social/twitter.png" alt="twitter" title="twitter">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/prosantomazumder/" target="_blank">
+                                    <img src="social/linkedin.png" alt="linkedin" title="linkedin">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/prosantomazumder/" target="_blank">
+                                    <img src="social/instagram.png" alt="instagram" title="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC_LG75nXROkqDD_Cd7su6Gg?view_as=subscriber" target="_blank">
+                                    <img src="social/youtube.png" alt="youtube" title="youtube">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://codepen.io/ProsantaMazumder" target="_blank">
+                                    <img src="social/codepan.png" alt="codepan" title="codepan">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.fiverr.com/pmprosanto" target="_blank">
+                                    <img src="social/fiverr.png" alt="fiverr" title="fiverr">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.upwork.com/freelancers/~012d70ffe6233256ab" target="_blank">
+                                    <img src="social/upwork.png" alt="upwork" title="upwork">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://presstechit-institute.com/" target="_blank">
+                                    <img src="social/presstechit.png" alt="PressTech IT Institute" title="PressTech IT Institute">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:prosantomazumder@gmail.com" target="_blank">
+                                    <img src="social/envalop.png" alt="prosantomazumder@gmail" title="prosantomazumder@gmail">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>   
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="js/jquery.slicknav.js"></script>
-		<script>
-		$(function(){
-			$.stellar({
-				horizontalScrolling: false,
-				verticalOffset: 40
-			});
-		});
-		</script>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+        <script src="js/main.js"></script>
+
     </body>
 </html>
