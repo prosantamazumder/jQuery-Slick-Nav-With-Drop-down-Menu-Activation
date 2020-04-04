@@ -1,7 +1,7 @@
 # jQuery Slick Nav With Dropdown Menu Activation
 
 **Live Demo**
-[repositories.presstechit-institute.com](http://repositories.presstechit-institute.com/Quick-Started-Develop-Slick-Slider-Customize-Options-jQuery-Slick-slider/)
+[repositories.presstechit-institute.com](http://repositories.presstechit-institute.com/jQuery-Slick-Nav-With-Dropdown-Menu-Activation/)
 
 
 
